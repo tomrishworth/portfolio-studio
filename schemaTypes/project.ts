@@ -24,5 +24,11 @@ export default defineType({
       of: [{type: 'image', options: {hotspot: true}}],
       validation: (Rule) => Rule.required().min(1),
     }),
+    defineField({
+      name: 'technologies',
+      title: 'Technologies',
+      type: 'array',
+      of: [{type: 'string'}],
+    }),
   ],
 })
